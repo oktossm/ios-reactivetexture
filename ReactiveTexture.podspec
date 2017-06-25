@@ -19,6 +19,7 @@ Pod::Spec.new do |s|
 
   s.description      = <<-DESC
   ReactiveSwift support for Texture framework.
+                         DESC
 
   s.homepage         = 'https://mmulyar@bitbucket.org/mmulyar/reactivetexture.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
