@@ -1,0 +1,52 @@
+PODS:
+  - PINCache (3.0.1-beta.4):
+    - PINCache/Arc-exception-safe (= 3.0.1-beta.4)
+    - PINCache/Core (= 3.0.1-beta.4)
+  - PINCache/Arc-exception-safe (3.0.1-beta.4):
+    - PINCache/Core
+  - PINCache/Core (3.0.1-beta.4):
+    - PINOperation (= 1.0.3)
+  - PINOperation (1.0.3)
+  - PINRemoteImage/Core (3.0.0-beta.9):
+    - PINOperation
+  - PINRemoteImage/iOS (3.0.0-beta.9):
+    - PINRemoteImage/Core
+  - PINRemoteImage/PINCache (3.0.0-beta.9):
+    - PINCache (= 3.0.1-beta.4)
+    - PINRemoteImage/Core
+  - ReactiveCocoa (5.0.4):
+    - ReactiveSwift (~> 1.1)
+  - ReactiveSwift (1.1.3):
+    - Result (~> 3.2)
+  - ReactiveTexture (0.2.0):
+    - ReactiveCocoa (~> 5.0)
+    - Texture (~> 2.0)
+  - Result (3.2.3)
+  - Texture (2.3.3):
+    - Texture/PINRemoteImage (= 2.3.3)
+  - Texture/Core (2.3.3)
+  - Texture/PINRemoteImage (2.3.3):
+    - PINRemoteImage/iOS (= 3.0.0-beta.9)
+    - PINRemoteImage/PINCache
+    - Texture/Core
+
+DEPENDENCIES:
+  - ReactiveTexture (from `../`)
+
+EXTERNAL SOURCES:
+  ReactiveTexture:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  PINCache: a89c8f609232afac77128557bd12c861844423d7
+  PINOperation: ac23db44796d4a564ecf9b5ea7163510f579b71d
+  PINRemoteImage: e4e02e15a6f96cedbcef2abf1c9c1228dc9897d7
+  ReactiveCocoa: b31e754d15937811ede648fc83cd68f5de70a3d4
+  ReactiveSwift: f54ba12c2e799003432930fa55495315ae44f32b
+  ReactiveTexture: 141a6f685dbd6b8b5b931c8d9ed5b7236653238a
+  Result: 128640a6347e8d2ae48b142556739a2d13f90ce6
+  Texture: e01a363c2b6567e1ff27a878995e0d271fbb424c
+
+PODFILE CHECKSUM: 91d1944fdc83aede72b00d984fbed4b651820d3f
+
+COCOAPODS: 1.2.1

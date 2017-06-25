@@ -1,0 +1,6 @@
+use_frameworks!
+target 'ReactiveTexture_Tests' do
+  pod 'ReactiveTexture', :path => '../'
+  
+  
+end
