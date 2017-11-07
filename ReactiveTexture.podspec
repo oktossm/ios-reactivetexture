@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ReactiveTexture'
-  s.version          = '0.2.0'
-  s.summary          = 'A short description of ReactiveTexture.'
+  s.version          = '0.2'
+  s.summary          = 'ReactiveSwift support for Texture'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,14 +18,14 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  ReactiveSwift support for Texture framework.
+                         DESC
 
   s.homepage         = 'https://mmulyar@bitbucket.org/mmulyar/reactivetexture.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'mikhailmulyar' => 'mulyarm@gmail.com' }
-  s.source           = { :git => 'git@bitbucket.org:mmulyar/reactivetexture.git', :tag => 0.2 }
+  s.source           = { :git => 'https://mmulyar@bitbucket.org/mmulyar/reactivetexture.git', :tag => 0.2 }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
