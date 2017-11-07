@@ -24,7 +24,7 @@ extension Reactive where Base: ASEditableTextNode {
     ///
     /// - note: To observe text values that change on all editing events,
     ///   see `continuousTextValues`.
-    public var textValues:           Signal<String?, NoError> {
+    public var textValues: Signal<String?, NoError> {
         return base.textView.reactive.textValues
     }
 
@@ -78,7 +78,6 @@ extension Reactive where Base: ASEditableTextNode {
                 observer.sendCompleted()
             }
 
-
             return disposable
         }
     }
@@ -87,10 +86,10 @@ extension Reactive where Base: ASEditableTextNode {
 
 internal final class ASEditableTextNodeObserver: NSObject, ASEditableTextNodeDelegate {
 
-    fileprivate var returnObserver: Observer<Void, NoError>? = nil
-    fileprivate var returnSignal:   Signal<Void, NoError>?   = nil
+    fileprivate var returnObserver: Signal<Void, NoError>.Observer?
+    fileprivate var returnSignal: Signal<Void, NoError>?
 
-    fileprivate weak var delegate: ASEditableTextNodeDelegate? = nil
+    fileprivate weak var delegate: ASEditableTextNodeDelegate?
 
     override init() {
         super.init()
@@ -123,14 +122,12 @@ internal final class ASEditableTextNodeObserver: NSObject, ASEditableTextNodeDel
     func revertDelegate(for textNode: ASEditableTextNode) {
         if self.delegate != nil {
             textNode.delegate = self.delegate
-        }
-        else if textNode.delegate === self {
+        } else if textNode.delegate === self {
             textNode.delegate = nil
         }
     }
 
-
-    //MARK: Delegate
+    // MARK: Delegate
 
     func editableTextNodeDidBeginEditing(_ editableTextNode: ASEditableTextNode) {
         self.delegate?.editableTextNodeDidBeginEditing?(editableTextNode)

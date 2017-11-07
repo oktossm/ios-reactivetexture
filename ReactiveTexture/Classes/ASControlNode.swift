@@ -41,10 +41,31 @@ extension Reactive where Base: ASControlNode {
                 compositeDisposable += disposable
 
                 associatedAction = (action, controlEvents, ScopedDisposable(compositeDisposable))
-            }
-            else {
+            } else {
                 associatedAction = nil
             }
+        }
+    }
+
+    private var pressEvent: ASControlNodeEvent {
+        return .touchUpInside
+    }
+
+    /// The action to be triggered when the button is pressed. It also controls
+    /// the enabled state of the button.
+    public var pressed: CocoaAction<Base>? {
+        get {
+            return associatedAction.withValue {
+                info in
+                return info.flatMap {
+                    info in
+                    return info.controlEvents == pressEvent ? info.action : nil
+                }
+            }
+        }
+
+        nonmutating set {
+            setAction(newValue, for: pressEvent)
         }
     }
 
@@ -91,7 +112,7 @@ extension Reactive where Base: ASControlNode {
 
             let disposable = lifetime.ended.observeCompleted(observer.sendCompleted)
 
-            return ActionDisposable {
+            return AnyDisposable {
                 [weak base = self.base] in
                 disposable?.dispose()
 
@@ -103,7 +124,7 @@ extension Reactive where Base: ASControlNode {
     }
 
     @available(*, unavailable, renamed: "controlEvents(_:)")
-    public func trigger(for controlEvents: UIControlEvents) -> Signal<(), NoError> {
+    public func trigger(for controlEvents: ASControlNodeEvent) -> Signal<(), NoError> {
         fatalError()
     }
 
