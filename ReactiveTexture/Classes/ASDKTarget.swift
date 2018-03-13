@@ -15,16 +15,17 @@ internal final class ASDKTarget<Value>: NSObject {
     }
 
 
-    private let observer:  Observer<Value, NoError>
+    private let observer: Signal<Value, NoError>.Observer
     private let transform: (Any?) -> Value
 
     private var state: State
 
-    internal init(_ observer: Observer<Value, NoError>, transform: @escaping (Any?) -> Value) {
+    internal init(_ observer: Signal<Value, NoError>.Observer, transform: @escaping (Any?) -> Value) {
         self.observer = observer
         self.transform = transform
         self.state = .idle
     }
+
 
     /// Broadcast the action message to all observers.
     ///
@@ -59,19 +60,8 @@ internal final class ASDKTarget<Value>: NSObject {
 }
 
 
-internal protocol ASDKTargetProtocol: class {
-    associatedtype Value
-
-    init(_ observer: Observer<Value, NoError>, transform: @escaping (Any?) -> Value)
-}
-
-
-extension ASDKTarget: ASDKTargetProtocol {
-}
-
-
-extension ASDKTargetProtocol where Value == Void {
-    internal init(_ observer: Observer<(), NoError>) {
+extension ASDKTarget where Value == Void {
+    internal convenience init(_ observer: Signal<(), NoError>.Observer) {
         self.init(observer, transform: { _ in })
     }
 }
