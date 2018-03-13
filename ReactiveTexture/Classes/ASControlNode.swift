@@ -104,7 +104,7 @@ extension Reactive where Base: ASControlNode {
     ///            control event occurs.
     public func mapControlEvents<Value>(_ controlEvents: ASControlNodeEvent, _ transform: @escaping (Base) -> Value) -> Signal<Value, NoError> {
         return Signal {
-            observer in
+            observer, signalLifetime in
             let receiver = ASDKTarget(observer) { transform($0 as! Base) }
             base.addTarget(receiver,
                            action: #selector(receiver.invoke),
@@ -112,8 +112,8 @@ extension Reactive where Base: ASControlNode {
 
             let disposable = lifetime.ended.observeCompleted(observer.sendCompleted)
 
-            return AnyDisposable {
-                [weak base = self.base] in
+            signalLifetime.observeEnded {
+                [weak base] in
                 disposable?.dispose()
 
                 base?.removeTarget(receiver,

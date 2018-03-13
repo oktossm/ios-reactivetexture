@@ -62,7 +62,7 @@ extension Reactive where Base: ASEditableTextNode {
     ///   will be saved as weak var.
     public var returnKeySignal: Signal<Void, NoError> {
         return Signal {
-            [weak base] observer in
+            [weak base] observer, signalLifetime in
 
             let o = self.associatedObserver
 
@@ -78,7 +78,9 @@ extension Reactive where Base: ASEditableTextNode {
                 observer.sendCompleted()
             }
 
-            return disposable
+            signalLifetime.observeEnded {
+                disposable.dispose()
+            }
         }
     }
 }
@@ -137,7 +139,7 @@ internal final class ASEditableTextNodeObserver: NSObject, ASEditableTextNodeDel
 
         let result = text.rangeOfCharacter(from: CharacterSet.newlines, options: [.backwards])
 
-        if let observer = self.returnObserver, text.characters.count == 1, let r = result, !r.isEmpty {
+        if let observer = self.returnObserver, text.count == 1, let r = result, !r.isEmpty {
             observer.send(value: ())
             return false
         }
