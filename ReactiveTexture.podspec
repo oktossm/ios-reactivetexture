@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ReactiveTexture'
-  s.version          = '0.4.1'
+  s.version          = '0.4.2'
   s.summary          = 'ReactiveSwift support for Texture'
 
 # This description is used to generate tags and improve search results.
@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
   ReactiveSwift support for Texture framework.
                          DESC
 
-  s.homepage         = 'https://mmulyar@bitbucket.org/mmulyar/reactivetexture.git'
+  s.homepage         = 'https://bitbucket.org/mmulyar/reactivetexture.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'mikhailmulyar' => 'mulyarm@gmail.com' }
-  s.source           = { :git => 'https://mmulyar@bitbucket.org/mmulyar/reactivetexture.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://bitbucket.org/mmulyar/reactivetexture.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
