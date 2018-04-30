@@ -9,6 +9,7 @@
 import ReactiveSwift
 import ReactiveCocoa
 import AsyncDisplayKit
+import enum Result.NoError
 
 
 extension Reactive where Base: ASDisplayNode {
@@ -30,5 +31,10 @@ extension Reactive where Base: ASDisplayNode {
     /// Sets the background color of the view.
     public var backgroundColor: BindingTarget<UIColor> {
         return makeBindingTarget { $0.backgroundColor = $1 }
+    }
+
+    /// Observe interface state.
+    public var interfaceState: Property<ASInterfaceState> {
+        return associatedValue { _ in Property(object: self.base, keyPath: "interfaceState") }
     }
 }

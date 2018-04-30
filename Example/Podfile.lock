@@ -14,11 +14,11 @@ PODS:
   - PINRemoteImage/PINCache (3.0.0-beta.13):
     - PINCache (= 3.0.1-beta.6)
     - PINRemoteImage/Core
-  - ReactiveCocoa (7.1.0):
+  - ReactiveCocoa (7.2.0):
     - ReactiveSwift (~> 3.1)
   - ReactiveSwift (3.1.0):
     - Result (~> 3.2)
-  - ReactiveTexture (0.3):
+  - ReactiveTexture (0.4.2):
     - ReactiveCocoa (~> 7.0)
     - Texture (~> 2.0)
   - Result (3.2.4)
@@ -41,9 +41,9 @@ SPEC CHECKSUMS:
   PINCache: d195fdba255283f7e9900a55e3cced377f431f9b
   PINOperation: a6219e6fc9db9c269eb7a7b871ac193bcf400aac
   PINRemoteImage: d6d51c5d2adda55f1ce30c96e850b6c4ebd2856a
-  ReactiveCocoa: 105ad96f6b8711f1ee7d165fc96587479298053b
+  ReactiveCocoa: 476dae7ca790f40d30d186a1bd7ebae4290395d5
   ReactiveSwift: 5b26d2e988fe0eed2daf48c4054d1de74db50184
-  ReactiveTexture: 24205874a93f6076e7dd8b4d148612ed9c0feffe
+  ReactiveTexture: 9140e2cb7083bb6272c7972817e423e0d9d981ff
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
   Texture: 7249074582daf75e524e59df5428b66b8e8db0e4
 
