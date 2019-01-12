@@ -18,7 +18,7 @@ PODS:
     - ReactiveSwift (~> 4.0)
   - ReactiveSwift (4.0.0):
     - Result (~> 4.0)
-  - ReactiveTexture (0.5.0):
+  - ReactiveTexture (0.5):
     - ReactiveCocoa (~> 8.0)
     - Texture (~> 2.0)
   - Result (4.1.0)
@@ -53,10 +53,10 @@ SPEC CHECKSUMS:
   PINRemoteImage: d6d51c5d2adda55f1ce30c96e850b6c4ebd2856a
   ReactiveCocoa: fbd26e9ba60e98417ee47433e59465a98ed9da0f
   ReactiveSwift: a2bb9ace428a109e9c0209615645d9d286c8c433
-  ReactiveTexture: 1f8481ed8a9a8767ee9e1c713b7995e7635e9be3
+  ReactiveTexture: 1cb14eaf7bb8ad222a7dfef1cdc29de3a26a12eb
   Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   Texture: 9d7e38965cf22ccd7cd9c249dd78b3f14e70ab6c
 
-PODFILE CHECKSUM: d9b46c2a4f784c1c6bc01442857f8a4555846b30
+PODFILE CHECKSUM: bf203619f7916f943a5a5fed26c927990badf5ab
 
 COCOAPODS: 1.5.3
