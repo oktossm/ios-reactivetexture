@@ -44,13 +44,13 @@ extension Reactive where Base: ASEditableTextNode {
     public var firstResponderSignal: Signal<Bool, NoError> {
         let begin = NotificationCenter.default
                 .reactive
-                .notifications(forName: .UITextViewTextDidBeginEditing, object: base.textView)
+                .notifications(forName: UITextView.textDidBeginEditingNotification, object: base.textView)
                 .take(during: lifetime)
                 .map { _ in true }
 
         let end = NotificationCenter.default
                 .reactive
-                .notifications(forName: .UITextViewTextDidEndEditing, object: base.textView)
+                .notifications(forName: UITextView.textDidEndEditingNotification, object: base.textView)
                 .take(during: lifetime)
                 .map { _ in false }
         return Signal.merge([begin, end])

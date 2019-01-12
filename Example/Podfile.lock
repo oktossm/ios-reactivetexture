@@ -14,18 +14,18 @@ PODS:
   - PINRemoteImage/PINCache (3.0.0-beta.13):
     - PINCache (= 3.0.1-beta.6)
     - PINRemoteImage/Core
-  - ReactiveCocoa (7.2.0):
-    - ReactiveSwift (~> 3.1)
-  - ReactiveSwift (3.1.0):
-    - Result (~> 3.2)
-  - ReactiveTexture (0.4.2):
-    - ReactiveCocoa (~> 7.0)
+  - ReactiveCocoa (8.0.2):
+    - ReactiveSwift (~> 4.0)
+  - ReactiveSwift (4.0.0):
+    - Result (~> 4.0)
+  - ReactiveTexture (0.5.0):
+    - ReactiveCocoa (~> 8.0)
     - Texture (~> 2.0)
-  - Result (3.2.4)
-  - Texture (2.6):
-    - Texture/PINRemoteImage (= 2.6)
-  - Texture/Core (2.6)
-  - Texture/PINRemoteImage (2.6):
+  - Result (4.1.0)
+  - Texture (2.7):
+    - Texture/PINRemoteImage (= 2.7)
+  - Texture/Core (2.7)
+  - Texture/PINRemoteImage (2.7):
     - PINRemoteImage/iOS (= 3.0.0-beta.13)
     - PINRemoteImage/PINCache
     - Texture/Core
@@ -33,20 +33,30 @@ PODS:
 DEPENDENCIES:
   - ReactiveTexture (from `../`)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - PINCache
+    - PINOperation
+    - PINRemoteImage
+    - ReactiveCocoa
+    - ReactiveSwift
+    - Result
+    - Texture
+
 EXTERNAL SOURCES:
   ReactiveTexture:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
   PINCache: d195fdba255283f7e9900a55e3cced377f431f9b
   PINOperation: a6219e6fc9db9c269eb7a7b871ac193bcf400aac
   PINRemoteImage: d6d51c5d2adda55f1ce30c96e850b6c4ebd2856a
-  ReactiveCocoa: 476dae7ca790f40d30d186a1bd7ebae4290395d5
-  ReactiveSwift: 5b26d2e988fe0eed2daf48c4054d1de74db50184
-  ReactiveTexture: 9140e2cb7083bb6272c7972817e423e0d9d981ff
-  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
-  Texture: 7249074582daf75e524e59df5428b66b8e8db0e4
+  ReactiveCocoa: fbd26e9ba60e98417ee47433e59465a98ed9da0f
+  ReactiveSwift: a2bb9ace428a109e9c0209615645d9d286c8c433
+  ReactiveTexture: 1f8481ed8a9a8767ee9e1c713b7995e7635e9be3
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  Texture: 9d7e38965cf22ccd7cd9c249dd78b3f14e70ab6c
 
-PODFILE CHECKSUM: 91d1944fdc83aede72b00d984fbed4b651820d3f
+PODFILE CHECKSUM: d9b46c2a4f784c1c6bc01442857f8a4555846b30
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3

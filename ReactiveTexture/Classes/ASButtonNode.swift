@@ -15,12 +15,12 @@ extension Reactive where Base: ASButtonNode {
     }
 
     /// Sets the title of the button for the specified state.
-    public func attributedTitle(for state: UIControlState) -> BindingTarget<NSAttributedString?> {
+    public func attributedTitle(for state: UIControl.State) -> BindingTarget<NSAttributedString?> {
         return makeBindingTarget { $0.setAttributedTitle($1, for: state) }
     }
 
     /// Sets the image of the button for the specified state.
-    public func image(for state: UIControlState) -> BindingTarget<UIImage?> {
+    public func image(for state: UIControl.State) -> BindingTarget<UIImage?> {
         return makeBindingTarget { $0.setImage($1, for: state) }
     }
 

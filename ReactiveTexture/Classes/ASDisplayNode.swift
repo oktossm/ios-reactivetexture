@@ -35,6 +35,9 @@ extension Reactive where Base: ASDisplayNode {
 
     /// Observe interface state.
     public var interfaceState: Property<ASInterfaceState> {
-        return associatedValue { _ in Property(object: self.base, keyPath: "interfaceState") }
+        return associatedValue {
+            _ in
+            Property<NSNumber>(object: self.base, keyPath: "interfaceState").map { ASInterfaceState(rawValue: $0.uintValue) }
+        }
     }
 }
