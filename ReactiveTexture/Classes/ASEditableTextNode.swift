@@ -24,14 +24,14 @@ extension Reactive where Base: ASEditableTextNode {
     ///
     /// - note: To observe text values that change on all editing events,
     ///   see `continuousTextValues`.
-    public var textValues: Signal<String?, NoError> {
+    public var textValues: Signal<String, NoError> {
         return base.textView.reactive.textValues
     }
 
     /// A signal of text values emitted by the text node upon any changes.
     ///
     /// - note: To observe text values only when editing ends, see `textValues`.
-    public var continuousTextValues: Signal<String?, NoError> {
+    public var continuousTextValues: Signal<String, NoError> {
         return base.textView.reactive.continuousTextValues
     }
 

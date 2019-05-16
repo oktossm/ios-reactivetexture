@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ReactiveTexture'
-  s.version          = '0.5'
+  s.version          = '0.6'
   s.summary          = 'ReactiveSwift support for Texture'
 
 # This description is used to generate tags and improve search results.
@@ -37,6 +37,6 @@ Pod::Spec.new do |s|
   # }
 
   s.dependency 'Texture', '~> 2.0'
-  s.dependency 'ReactiveCocoa', '~> 8.0'
+  s.dependency 'ReactiveCocoa', '~> 9.0'
 
 end
