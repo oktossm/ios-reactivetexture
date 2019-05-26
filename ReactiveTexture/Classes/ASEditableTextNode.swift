@@ -24,14 +24,14 @@ extension Reactive where Base: ASEditableTextNode {
     ///
     /// - note: To observe text values that change on all editing events,
     ///   see `continuousTextValues`.
-    public var textValues: Signal<String, NoError> {
+    public var textValues: Signal<String, Never> {
         return base.textView.reactive.textValues
     }
 
     /// A signal of text values emitted by the text node upon any changes.
     ///
     /// - note: To observe text values only when editing ends, see `textValues`.
-    public var continuousTextValues: Signal<String, NoError> {
+    public var continuousTextValues: Signal<String, Never> {
         return base.textView.reactive.continuousTextValues
     }
 
@@ -41,7 +41,7 @@ extension Reactive where Base: ASEditableTextNode {
     }
 
     /// A signal of events sent when text node becomes first responder.
-    public var firstResponderSignal: Signal<Bool, NoError> {
+    public var firstResponderSignal: Signal<Bool, Never> {
         let begin = NotificationCenter.default
                 .reactive
                 .notifications(forName: UITextView.textDidBeginEditingNotification, object: base.textView)
@@ -60,7 +60,7 @@ extension Reactive where Base: ASEditableTextNode {
     ///
     /// - note: ASEditableTextNode delegate will be overridden, old delegate
     ///   will be saved as weak var.
-    public var returnKeySignal: Signal<Void, NoError> {
+    public var returnKeySignal: Signal<Void, Never> {
         return Signal {
             [weak base] observer, signalLifetime in
 
@@ -68,7 +68,7 @@ extension Reactive where Base: ASEditableTextNode {
 
             let disposable = CompositeDisposable()
             if let base = base {
-                disposable += o.returnKeySignal(for: base).observeValues { observer.send(value: ()) }
+                disposable += o.returnKeySignal(for: base).observeResult { _ in observer.send(value: ()) }
             }
 
             disposable += self.lifetime.ended.observeCompleted {
