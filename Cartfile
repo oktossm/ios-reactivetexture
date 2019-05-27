@@ -1,1 +1,2 @@
-git "https://bitbucket.org/mmulyar/reactivetexture.git"
+github "ReactiveCocoa/ReactiveCocoa"
+github "texturegroup/texture"
