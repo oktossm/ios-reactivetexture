@@ -21,7 +21,6 @@
 		EFF220C8229AC81F00798C70 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EFF220C6229AC81F00798C70 /* Info.plist */; };
 		EFF220D1229AC88000798C70 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFF220CA229AC88000798C70 /* ReactiveSwift.framework */; };
 		EFF220D2229AC88000798C70 /* PINOperation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFF220CB229AC88000798C70 /* PINOperation.framework */; };
-		EFF220D3229AC88000798C70 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFF220CC229AC88000798C70 /* Result.framework */; };
 		EFF220D4229AC88000798C70 /* PINCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFF220CD229AC88000798C70 /* PINCache.framework */; };
 		EFF220D5229AC88000798C70 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFF220CE229AC88000798C70 /* ReactiveCocoa.framework */; };
 		EFF220D6229AC88000798C70 /* AsyncDisplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFF220CF229AC88000798C70 /* AsyncDisplayKit.framework */; };
@@ -48,7 +47,6 @@
 		EFF220C6229AC81F00798C70 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFF220CA229AC88000798C70 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
 		EFF220CB229AC88000798C70 /* PINOperation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINOperation.framework; path = Carthage/Build/iOS/PINOperation.framework; sourceTree = "<group>"; };
-		EFF220CC229AC88000798C70 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		EFF220CD229AC88000798C70 /* PINCache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PINCache.framework; path = Carthage/Build/iOS/PINCache.framework; sourceTree = "<group>"; };
 		EFF220CE229AC88000798C70 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
 		EFF220CF229AC88000798C70 /* AsyncDisplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AsyncDisplayKit.framework; path = Carthage/Build/iOS/AsyncDisplayKit.framework; sourceTree = "<group>"; };
@@ -70,7 +68,6 @@
 			files = (
 				EFF220D1229AC88000798C70 /* ReactiveSwift.framework in Frameworks */,
 				EFF220D2229AC88000798C70 /* PINOperation.framework in Frameworks */,
-				EFF220D3229AC88000798C70 /* Result.framework in Frameworks */,
 				EFF220D4229AC88000798C70 /* PINCache.framework in Frameworks */,
 				EFF220D5229AC88000798C70 /* ReactiveCocoa.framework in Frameworks */,
 				EFF220D6229AC88000798C70 /* AsyncDisplayKit.framework in Frameworks */,
@@ -148,7 +145,6 @@
 				EFF220D0229AC88000798C70 /* PINRemoteImage.framework */,
 				EFF220CE229AC88000798C70 /* ReactiveCocoa.framework */,
 				EFF220CA229AC88000798C70 /* ReactiveSwift.framework */,
-				EFF220CC229AC88000798C70 /* Result.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
