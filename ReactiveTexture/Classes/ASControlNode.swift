@@ -6,7 +6,6 @@
 import ReactiveSwift
 import ReactiveCocoa
 import AsyncDisplayKit
-import enum Result.NoError
 
 
 extension Reactive where Base: ASControlNode {
@@ -79,7 +78,7 @@ extension Reactive where Base: ASControlNode {
     ///   - controlEvents: The control event mask.
     ///
     /// - returns: A signal that sends the control each time the control event occurs.
-    public func controlEvents(_ controlEvents: ASControlNodeEvent) -> Signal<Base, NoError> {
+    public func controlEvents(_ controlEvents: ASControlNodeEvent) -> Signal<Base, Never> {
         return mapControlEvents(controlEvents, { $0 })
     }
 
@@ -102,7 +101,7 @@ extension Reactive where Base: ASControlNode {
     ///
     /// - returns: A signal that sends the reduced value from the control each time the
     ///            control event occurs.
-    public func mapControlEvents<Value>(_ controlEvents: ASControlNodeEvent, _ transform: @escaping (Base) -> Value) -> Signal<Value, NoError> {
+    public func mapControlEvents<Value>(_ controlEvents: ASControlNodeEvent, _ transform: @escaping (Base) -> Value) -> Signal<Value, Never> {
         return Signal {
             observer, signalLifetime in
             let receiver = ASDKTarget(observer) { transform($0 as! Base) }
@@ -124,7 +123,7 @@ extension Reactive where Base: ASControlNode {
     }
 
     @available(*, unavailable, renamed: "controlEvents(_:)")
-    public func trigger(for controlEvents: ASControlNodeEvent) -> Signal<(), NoError> {
+    public func trigger(for controlEvents: ASControlNodeEvent) -> Signal<(), Never> {
         fatalError()
     }
 

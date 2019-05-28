@@ -9,7 +9,6 @@
 import ReactiveSwift
 import ReactiveCocoa
 import AsyncDisplayKit
-import enum Result.NoError
 
 
 extension Reactive where Base: ASDisplayNode {

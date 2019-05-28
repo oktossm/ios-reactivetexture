@@ -6,7 +6,6 @@
 import ReactiveSwift
 import ReactiveCocoa
 import AsyncDisplayKit
-import enum Result.NoError
 
 
 extension Reactive where Base: ASEditableTextNode {
@@ -88,8 +87,8 @@ extension Reactive where Base: ASEditableTextNode {
 
 internal final class ASEditableTextNodeObserver: NSObject, ASEditableTextNodeDelegate {
 
-    fileprivate var returnObserver: Signal<Void, NoError>.Observer?
-    fileprivate var returnSignal: Signal<Void, NoError>?
+    fileprivate var returnObserver: Signal<Void, Never>.Observer?
+    fileprivate var returnSignal: Signal<Void, Never>?
 
     fileprivate weak var delegate: ASEditableTextNodeDelegate?
 
@@ -97,7 +96,7 @@ internal final class ASEditableTextNodeObserver: NSObject, ASEditableTextNodeDel
         super.init()
     }
 
-    func returnKeySignal(for textNode: ASEditableTextNode) -> Signal<Void, NoError> {
+    func returnKeySignal(for textNode: ASEditableTextNode) -> Signal<Void, Never> {
 
         if let signal = self.returnSignal {
             return signal
@@ -105,7 +104,7 @@ internal final class ASEditableTextNodeObserver: NSObject, ASEditableTextNodeDel
 
         self.saveDelegate(for: textNode)
 
-        let (signal, observer) = Signal<Void, NoError>.pipe()
+        let (signal, observer) = Signal<Void, Never>.pipe()
 
         returnSignal = signal
         returnObserver = observer
