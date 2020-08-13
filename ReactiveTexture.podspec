@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ReactiveTexture'
-  s.version          = '0.6'
+  s.version          = '0.8'
   s.summary          = 'ReactiveSwift support for Texture'
 
 # This description is used to generate tags and improve search results.
@@ -29,14 +29,14 @@ Pod::Spec.new do |s|
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
-  s.swift_version = '4.2'
+  s.swift_version = '5.0'
   s.source_files = 'ReactiveTexture/Classes/**/*'
   
   # s.resource_bundles = {
   #   'ReactiveTexture' => ['ReactiveTexture/Assets/*.png']
   # }
 
-  s.dependency 'Texture', '~> 2.0'
-  s.dependency 'ReactiveCocoa', '~> 9.0'
+  s.dependency 'Texture', '~> 3.0'
+  s.dependency 'ReactiveCocoa', '~> 11.0'
 
 end
