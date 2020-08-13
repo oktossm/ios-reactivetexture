@@ -1,2 +1,2 @@
 github "ReactiveCocoa/ReactiveCocoa"
-github "texturegroup/texture"
+github "oktossm/texture" "carthage3.0"
