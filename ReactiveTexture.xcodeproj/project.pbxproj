@@ -3,10 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		109F0CF127577C0800414941 /* ReactiveSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 109F0CEF27577C0800414941 /* ReactiveSwift.xcframework */; };
+		109F0CF327577C0800414941 /* ReactiveCocoa.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 109F0CF027577C0800414941 /* ReactiveCocoa.xcframework */; };
+		109F0CFA27577C2600414941 /* PINOperation.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 109F0CF627577C2600414941 /* PINOperation.xcframework */; };
+		109F0CFC27577C2600414941 /* AsyncDisplayKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 109F0CF727577C2600414941 /* AsyncDisplayKit.xcframework */; };
+		109F0CFE27577C2600414941 /* PINRemoteImage.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 109F0CF827577C2600414941 /* PINRemoteImage.xcframework */; };
+		109F0D0027577C2600414941 /* PINCache.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 109F0CF927577C2600414941 /* PINCache.xcframework */; };
 		EFF220B3229AC77B00798C70 /* ReactiveTexture.h in Headers */ = {isa = PBXBuildFile; fileRef = EFF220B1229AC77B00798C70 /* ReactiveTexture.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EFF220B7229AC79000798C70 /* ObjCRuntimeAliases.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF22095229AC6CA00798C70 /* ObjCRuntimeAliases.m */; };
 		EFF220B8229AC79300798C70 /* ASDKTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF22096229AC6CA00798C70 /* ASDKTarget.swift */; };
@@ -19,16 +25,16 @@
 		EFF220C1229AC7DA00798C70 /* ASControlNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF2209F229AC6CA00798C70 /* ASControlNode.swift */; };
 		EFF220C7229AC81F00798C70 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF220C5229AC81F00798C70 /* Tests.swift */; };
 		EFF220C8229AC81F00798C70 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EFF220C6229AC81F00798C70 /* Info.plist */; };
-		EFF220D1229AC88000798C70 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFF220CA229AC88000798C70 /* ReactiveSwift.framework */; };
-		EFF220D2229AC88000798C70 /* PINOperation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFF220CB229AC88000798C70 /* PINOperation.framework */; };
-		EFF220D4229AC88000798C70 /* PINCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFF220CD229AC88000798C70 /* PINCache.framework */; };
-		EFF220D5229AC88000798C70 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFF220CE229AC88000798C70 /* ReactiveCocoa.framework */; };
-		EFF220D6229AC88000798C70 /* AsyncDisplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFF220CF229AC88000798C70 /* AsyncDisplayKit.framework */; };
-		EFF220D7229AC88000798C70 /* PINRemoteImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFF220D0229AC88000798C70 /* PINRemoteImage.framework */; };
 		EFF220D9229B041100798C70 /* ObjCRuntimeAliases.h in Headers */ = {isa = PBXBuildFile; fileRef = EFF2209D229AC6CA00798C70 /* ObjCRuntimeAliases.h */; settings = {ATTRIBUTES = (Private, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		109F0CEF27577C0800414941 /* ReactiveSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ReactiveSwift.xcframework; path = Carthage/Build/ReactiveSwift.xcframework; sourceTree = "<group>"; };
+		109F0CF027577C0800414941 /* ReactiveCocoa.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ReactiveCocoa.xcframework; path = Carthage/Build/ReactiveCocoa.xcframework; sourceTree = "<group>"; };
+		109F0CF627577C2600414941 /* PINOperation.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PINOperation.xcframework; path = Carthage/Build/PINOperation.xcframework; sourceTree = "<group>"; };
+		109F0CF727577C2600414941 /* AsyncDisplayKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AsyncDisplayKit.xcframework; path = Carthage/Build/AsyncDisplayKit.xcframework; sourceTree = "<group>"; };
+		109F0CF827577C2600414941 /* PINRemoteImage.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PINRemoteImage.xcframework; path = Carthage/Build/PINRemoteImage.xcframework; sourceTree = "<group>"; };
+		109F0CF927577C2600414941 /* PINCache.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PINCache.xcframework; path = Carthage/Build/PINCache.xcframework; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* ReactiveTexture_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactiveTexture_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFF22095229AC6CA00798C70 /* ObjCRuntimeAliases.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjCRuntimeAliases.m; sourceTree = "<group>"; };
 		EFF22096229AC6CA00798C70 /* ASDKTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASDKTarget.swift; sourceTree = "<group>"; };
@@ -66,12 +72,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFF220D1229AC88000798C70 /* ReactiveSwift.framework in Frameworks */,
-				EFF220D2229AC88000798C70 /* PINOperation.framework in Frameworks */,
-				EFF220D4229AC88000798C70 /* PINCache.framework in Frameworks */,
-				EFF220D5229AC88000798C70 /* ReactiveCocoa.framework in Frameworks */,
-				EFF220D6229AC88000798C70 /* AsyncDisplayKit.framework in Frameworks */,
-				EFF220D7229AC88000798C70 /* PINRemoteImage.framework in Frameworks */,
+				109F0CF127577C0800414941 /* ReactiveSwift.xcframework in Frameworks */,
+				109F0CF327577C0800414941 /* ReactiveCocoa.xcframework in Frameworks */,
+				109F0CFE27577C2600414941 /* PINRemoteImage.xcframework in Frameworks */,
+				109F0CFC27577C2600414941 /* AsyncDisplayKit.xcframework in Frameworks */,
+				109F0D0027577C2600414941 /* PINCache.xcframework in Frameworks */,
+				109F0CFA27577C2600414941 /* PINOperation.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +145,12 @@
 		EFF220C9229AC88000798C70 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				109F0CF727577C2600414941 /* AsyncDisplayKit.xcframework */,
+				109F0CF927577C2600414941 /* PINCache.xcframework */,
+				109F0CF627577C2600414941 /* PINOperation.xcframework */,
+				109F0CF827577C2600414941 /* PINRemoteImage.xcframework */,
+				109F0CF027577C0800414941 /* ReactiveCocoa.xcframework */,
+				109F0CEF27577C0800414941 /* ReactiveSwift.xcframework */,
 				EFF220CF229AC88000798C70 /* AsyncDisplayKit.framework */,
 				EFF220CD229AC88000798C70 /* PINCache.framework */,
 				EFF220CB229AC88000798C70 /* PINOperation.framework */,
@@ -368,7 +380,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -385,7 +398,11 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Example/Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -400,7 +417,11 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Example/Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -440,7 +461,11 @@
 				INFOPLIST_FILE = ReactiveTexture/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "$(SRCROOT)/ReactiveTexture/module.modulemap";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -487,7 +512,11 @@
 				INFOPLIST_FILE = ReactiveTexture/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "$(SRCROOT)/ReactiveTexture/module.modulemap";
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mikhailmulyar.ReactiveTexture;
